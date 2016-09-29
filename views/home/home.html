@@ -1,0 +1,502 @@
+<!-- TOP AREA -->
+<div class="top-area show-onload">
+    <div class="bg-holder full">
+        <div class="bg-front bg-front-mob-rel">
+            <div class="container">
+                <div class="search-tabs search-tabs-bg search-tabs-abs-bottom">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-plane"></i> <span >Voyageur</span></a>
+                            </li>
+                            <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-building-o"></i> <span >Demandeur</span></a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-1">
+                                <h2>Chercher un Voyageur</h2>
+                                <form>
+                                    <div class="tabbable">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in active" id="flight-search-1">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa fa-map-marker input-icon"></i>
+                                                                    <label>Ville de depart :</label>
+                                                                    <input class="typeahead form-control" placeholder="Pays, Ville, Aéroport" type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa fa-map-marker input-icon"></i>
+                                                                    <label>Ville de retour :</label>
+                                                                    <input class="typeahead form-control" placeholder="Pays, Ville, Aéroport" type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-daterange" data-date-format="d/mm/yyyy">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                        <label>Date de depard :</label>
+                                                                        <input class="form-control" name="start" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                        <label>Date de retour :</label>
+                                                                        <input class="form-control" name="end" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg" type="submit">Recherche</button>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="tab-2">
+                                <h2>Chercher un Demandeur</h2>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                        <label>Ville :</label>
+                                                        <input class="typeahead form-control" placeholder="Pays, Ville, Aéroport" type="text" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-daterange" data-date-format="d/mm/yyyy">
+                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                            <label>Date :</label>
+                                                            <input class="form-control" name="start" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-group-lg form-group-icon-left">
+                                                        <label>Type de Colis :</label>
+                                                        <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                            <label class="btn btn-primary active">
+                                                                <input type="radio" name="options" />1</label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="options" />2</label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="options" />3</label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="options" />4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group form-group-lg form-group-icon-left">
+                                                        <label>Type de Demandeur :</label>
+                                                        <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                            <label class="btn btn-primary active">
+                                                                <input type="radio" name="options" />1</label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="options" />2</label>
+                                                            <label class="btn btn-primary">
+                                                                <input type="radio" name="options" />3</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg" type="submit">Recherche</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-slider owl-carousel-area visible-lg" id="owl-carousel-slider">
+            <div class="bg-holder full">
+                <div class="bg-img" style="background-image:url(img/bg.png);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-img" style="background-image:url(img/bg2.png);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-img" style="background-image:url(img/bg3.png);"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap"></div>
+
+<div class="container">
+    <h3 style="text-align: center;">
+        Livraison entre particuliers en toute sécurité Épargnez les frais de port sur vos envois/achats en Tunisie et à l'international
+    </h3>
+    <div class="row row-wrap">
+        <div class="col-md-4" style="padding-top: 100px">
+            <h3 style="text-align: center;"><i class="fa fa-gift"></i>Vous souhaitez obtenir ou envoyer un objet</h3>
+            <div class="fea_item btns" align="center"><a href="#" class="btn btn-primary btn-lg">Publier votre demande</a></div>
+        </div>
+        <div class="col-md-4"><img src="img/crowdshipping.png" width="350px" height="350px"></div>
+        <div class="col-md-4" style="padding-top: 100px">
+            <h3 style="text-align: center;"><i class="fa fa-suitcase"></i> Vous souhaitez transporter un objet</h3>
+            <div class="btns" align="center"><a href="#" class="btn btn-primary btn-lg">Publier votre voyage</a></div>
+        </div>
+    </div>
+    <div class="gap gap-small"></div>
+</div>
+<div class="bg-darken">
+    <div class="container">
+        <div class="gap"></div>
+        <h2 style="text-align: center;">Les meilleurs demandeurs de la semaine</h2>
+        <div class="row row-wrap">
+            <div class="col-md-3" ng-repeat="seeker in seekers">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" ui-sref="evaluation({user : seeker._id,type : 'seeker', state : 'home'})">
+                            <img style="height: 200px;width: 200px;" src="http://localhost:3000/{{seeker.image}}" alt="{{seeker.fName}}" title="{{seeker.fName}}" />
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul ng-if="seeker.evaluationAsSeeker.total===100" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="80< seeker.evaluationAsSeeker.total && seeker.evaluationAsSeeker.total < 100" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-full"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="seeker.evaluationAsSeeker.total===80" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="60 < seeker.evaluationAsSeeker.total && seeker.evaluationAsSeeker.total < 80" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="seeker.evaluationAsSeeker.total === 60" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="40 < seeker.evaluationAsSeeker.total && seeker.evaluationAsSeeker.total < 60" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="seeker.evaluationAsSeeker.total === 40" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="20 < seeker.evaluationAsSeeker.total && seeker.evaluationAsSeeker.total < 40" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="seeker.evaluationAsSeeker.total === 20" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="0 < seeker.evaluationAsSeeker.total && seeker.evaluationAsSeeker.total < 20" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="seeker.evaluationAsSeeker.total===0" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" ui-sref="evaluation({user : seeker._id, type : 'seeker', state : 'home'})">{{seeker.fName | uppercase}} {{seeker.lName | uppercase}}</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap gap-small"></div>
+        <h2 style="text-align: center;">Les meilleurs voyageurs de la semaine</h2>
+        <div class="row row-wrap">
+            <div class="col-md-3" ng-repeat="traveler in travelers">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" ui-sref="evaluation({user : traveler._id, type : 'traveler', state : 'home'})">
+                            <img style="height: 200px;width: 200px;" src="http://localhost:3000/{{traveler.image}}" alt="{{traveler.fName}}" title="{{traveler.fName}}" />
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul ng-if="traveler.evaluationAsTraveler.total===100" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="80< traveler.evaluationAsTraveler.total && traveler.evaluationAsTraveler.total < 100" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-full"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="traveler.evaluationAsTraveler.total ===80" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="60 < traveler.evaluationAsTraveler.total && traveler.evaluationAsTraveler.total < 80" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="traveler.evaluationAsTraveler.total === 60" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="40 < traveler.evaluationAsTraveler.total && traveler.evaluationAsTraveler.total < 60" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="traveler.evaluationAsTraveler.total === 40" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="20 < traveler.evaluationAsTraveler.total && traveler.evaluationAsTraveler.total < 40" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="traveler.evaluationAsTraveler.total === 20" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="0 < traveler.evaluationAsTraveler.total && traveler.evaluationAsTraveler.total < 20" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <ul ng-if="traveler.evaluationAsTraveler.total===0" class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" ui-sref="evaluation({user : traveler._id, type : 'traveler', state : 'home'})">{{traveler.fName | uppercase}} {{traveler.lName | uppercase}}</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap gap-small"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="gap gap-small"></div>
+    <div class="gap gap-small"></div>
+    <div class="row row-wrap" data-gutter="60">
+        <h2 style="text-align: center;">Méthodes de payement</h2>
+        <div class="col-md-3">
+            <div class="thumb">
+                <div class="thumb-caption">
+                    <img src="img/3D-secure.jpg" alt="3D secure" title="3D secure" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumb">
+                <div class="thumb-caption">
+                    <img src="img/visa.png" alt="Visa Card" title="Visa Card" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumb">
+                <div class="thumb-caption">
+                    <img src="img/Poste.jpg" alt="La Poste" title="La Poste" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumb">
+                <div class="thumb-caption">
+                    <img src="img/mdinar.jpg" alt="mdinar" title="Mdinar" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/custom.js"></script>

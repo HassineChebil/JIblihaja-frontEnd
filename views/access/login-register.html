@@ -1,0 +1,60 @@
+
+<div class="container">
+    <h1 class="page-title">S'enregistrer/Se connecter à Jiblihaja</h1>
+    <div class="gap"></div>
+    <div class="row" data-gutter="60">
+        <div class="col-md-4">
+            <h3>Bienvenue à Jiblihaja</h3>
+            <p>Euismod nunc porta magna elementum penatibus amet gravida sit ligula odio id nunc proin sem augue quis posuere interdum in sapien congue rutrum scelerisque sociosqu cubilia ridiculus et luctus mollis</p>
+            <p>Praesent est semper massa lobortis quisque lectus ridiculus hac eget</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Se connecter</h3>
+            <form ng-submit="login(user)">
+                <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
+                    <label>Email</label>
+                    <input class="form-control" placeholder="e.g. johndoe@gmail.com" type="text" ng-model="user.username"/>
+                </div>
+                <div class="form-group form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
+                    <label>Mot de passe</label>
+                    <input class="form-control" type="password" placeholder="my secret password" ng-model="user.password"/>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Se connecter" />
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h3>S'enregistrer</h3>
+            <div ng-if="registerResp.status === 0" class="alert alert-danger alert-dismissible" role="alert">
+                {{registerResp.message}}
+            </div>
+            <div ng-if="registerResp.status === 1" class="alert alert-success alert-dismissible" role="alert">
+                {{registerResp.message}}
+            </div>
+            <div ng-repeat="m in fieldregisterError" class="alert alert-danger alert-dismissible" role="alert">
+                {{m}}
+            </div>
+            <form name="registerForm" ng-submit="register(newUser)" role="form">
+                <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
+                    <label>Prénom</label>
+                    <input class="form-control" placeholder="exp. Foulen" name="fName" type="text" ng-model="newUser.fName"/>
+                </div>
+                <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
+                    <label>Nom</label>
+                    <input class="form-control" placeholder="exp. Ben Foulen" type="text" ng-model="newUser.lName"/>
+                </div>
+                <div class="form-group form-group-icon-left"><i class="fa fa-envelope input-icon input-icon-show"></i>
+                    <label>Email</label>
+                    <input class="form-control" placeholder="e.g. johndoe@gmail.com" type="text" ng-model="newUser.email"/>
+                </div>
+                <div class="form-group form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
+                    <label>Mot de passe</label>
+                    <input class="form-control" type="password" placeholder="my secret password" ng-model="newUser.password"/>
+                </div>
+                <input class="btn btn-primary" type="submit" value="S'enregister à Jibli7aja" />
+            </form>
+        </div>
+    </div>
+</div>
+<div class="gap"></div>
+
+<script src="js/custom.js"></script>

@@ -1,0 +1,128 @@
+
+
+
+
+        <div class="container">
+            <h1 class="page-title">Accueil</h1>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="user-profile-sidebar">
+                        <div class="user-profile-avatar text-center">
+                            <img  ng-if="loggedUser.image !== undefined" src="http://localhost:3000/{{loggedUser.image}}" alt="Image de profile" title="Image de profile" />
+                            <img ng-if="loggedUser.image === undefined" src="img/300x300.png" alt="Image de profile" title="Image de profile">
+                            <h5>{{user.fName}} {{user.lName}}</h5>
+                            <p>Membre depuis 2015</p>
+                            <h6>Niveau de confiance : <span ng-if="loggedUser !== undefined">{{loggedUser.evaTotal}}/100</span></h6>
+                        </div>
+                        <ul class="list user-profile-nav">
+                            <li  class="active"><a ui-sref="profile"><i class="fa fa-user"></i>Accueil</a>
+                            </li>
+                            <li><a ui-sref="profile-settings"><i class="fa fa-dashboard"></i>Compte</a>
+                            </li>
+                            <li><a ui-sref="profile-annonces"><i class="fa fa-bullhorn"></i>Annonces</a>
+                            </li>
+                            <li><a ui-sref="profile-messages"><i class="fa fa-envelope"></i>Messages</a>
+                            </li>
+                            <li><a ui-sref="profile-bank"><i class="fa fa-credit-card"></i>Banque</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-8">
+                    <h4>Statistics</h4>
+                    <ul class="list list-inline user-profile-statictics mb30">
+                        <li><i class="fa fa-bullhorn user-profile-statictics-icon"></i>
+                            <h5>20</h5>
+                            <p>Annonces</p>
+                        </li>
+                        <li><i class="fa fa-dollar user-profile-statictics-icon"></i>
+                            <h5>5</h5>
+                            <p>Transactions</p>
+                        </li>
+                        <li><i class="fa fa-envelope user-profile-statictics-icon"></i>
+                            <h5>10</h5>
+                            <p>Messages</p>
+                        </li>
+                        <li><i class="fa fa-comment user-profile-statictics-icon"></i>
+                            <h5>3</h5>
+                            <p>Avis</p>
+                        </li>
+                    </ul>
+                    <div class="col-md-5">
+
+                            <h4>Information personnelle</h4>
+                            <div class="form-group form-group-icon-left">
+                                <b>Nom :</b>
+                                <span ng-if="loggedUser.lName !== undefined" class="text-gray">{{loggedUser.lName}}</span>
+                                <span ng-if="loggedUser.lName === undefined" class="text-gray">pas encore saisie</span>
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <b>Prénom :</b>
+                                <span ng-if="loggedUser.fName !== undefined" class="text-gray">{{loggedUser.fName}}</span>
+                                <span ng-if="loggedUser.fName === undefined" class="text-gray">pas encore saisie</span>
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <b>E-mail :</b>
+                                <span ng-if="loggedUser.email !== undefined" class="text-gray">{{loggedUser.email}}</span>
+                                <span ng-if="loggedUser.email === undefined" class="text-gray">pas encore saisie</span>
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <b>Télèphone :</b>
+                                <span ng-if="loggedUser.tel !== undefined" class="text-gray">{{loggedUser.tel}}</span>
+                                <span ng-if="loggedUser.tel === undefined" class="text-gray">pas encore saisie</span>
+                            </div>
+                            <div class="gap gap-small"></div>
+
+
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <h4>Emplacement</h4>
+                        <div class="form-group form-group-icon-left">
+                            <b>Aéroport :</b>
+                            <span ng-if="loggedUser.airport !== undefined" class="text-gray">{{loggedUser.airport}}</span>
+                            <span ng-if="loggedUser.airport === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+                        <div class="form-group">
+                            <b>Adresse :</b>
+                            <span ng-if="loggedUser.address !== undefined" class="text-gray">{{loggedUser.address}}</span>
+                            <span ng-if="loggedUser.address === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+                        <div class="form-group">
+                            <b>Ville :</b>
+                            <span ng-if="loggedUser.town !== undefined" class="text-gray">{{loggedUser.town}}</span>
+                            <span ng-if="loggedUser.town === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+                        <div class="form-group">
+                            <b>Gouvernerat :</b>
+                            <span ng-if="loggedUser.dist !== undefined" class="text-gray">{{loggedUser.dist}}</span>
+                            <span ng-if="loggedUser.dist === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+                        <div class="form-group">
+                            <b>Code postal :</b>
+                            <span ng-if="loggedUser.postal !== undefined" class="text-gray">{{loggedUser.postal}}</span>
+                            <span ng-if="loggedUser.postal === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+                        <div class="form-group">
+                            <b>Pays :</b>
+                            <span ng-if="loggedUser.country !== undefined" class="text-gray">{{loggedUser.country}}</span>
+                            <span ng-if="loggedUser.country === undefined" class="text-gray">pas encore saisie</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="js/custom.js"></script>
+

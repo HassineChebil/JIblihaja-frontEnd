@@ -1,0 +1,118 @@
+
+
+    <div class="container">
+        <h1 class="page-title">Votre Banque Jibli7aja</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="user-profile-sidebar">
+                    <div class="user-profile-avatar text-center">
+                        <img ng-if="loggedUser.image !== undefined" src="http://localhost:3000/{{loggedUser.image}}" alt="Image de profile" title="Image de profile" />
+                        <img ng-if="loggedUser.image === undefined" src="img/300x300.png" alt="Image de profile" title="Image de profile">
+                        <h5>Prénom Nom</h5>
+                        <p>Membre depuis 2015</p>
+                        <h6>Niveau de confiance : <span>78/100</span></h6>
+                    </div>
+                    <ul class="list user-profile-nav">
+                        <li><a ui-sref="profile"><i class="fa fa-user"></i>Accueil</a>
+                        </li>
+                        <li><a ui-sref="profile-settings"><i class="fa fa-dashboard"></i>Compte</a>
+                        </li>
+                        <li><a ui-sref="profile-annonces"><i class="fa fa-bullhorn"></i>Annonces</a>
+                        </li>
+                        <li><a ui-sref="profile-messages"><i class="fa fa-envelope"></i>Messages</a>
+                        </li>
+                        <li class="active"><a ui-sref="profile-bank"><i class="fa fa-credit-card"></i>Banque</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-8">
+
+
+                    <b>Votre solde actuel </b>
+                    <h3  class="text-color">300  <i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></h3>
+                    <a href="#" rel="tooltip" data-placement="top" class="btn btn-success" title="Ajouter des fonds à votre compte Jibli7aja depuis votre compte bancaire"><i class="fa fa-plus-circle"></i>  Ajouter des fonds</a>
+
+
+
+                <div class="gap gap-small"></div>
+                <b>Transfert reçue volume brut</b>
+                <ul class="list list-inline user-profile-statictics mb30">
+                    <li><i class="fa fa-money user-profile-statictics-icon"></i>
+                        <h5>0.00<i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></h5>
+                        <p>Volume d'aujourd'hui</p>
+                    </li>
+                    <li><i class="fa fa-money user-profile-statictics-icon"></i>
+                        <h5>10.0<i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></h5>
+                        <p>Dernier volume de 10 jours</p>
+                    </li>
+                    <li><i class="fa fa-money user-profile-statictics-icon"></i>
+                        <h5>200<i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></h5>
+                        <p>Dernier volume de 30 jours</p>
+                    </li>
+
+                </ul>
+                <div class="gap gap-small"></div>
+                <b>Historiques des transactions</b>
+                <div class="gap gap-small"></div>
+                <table class="table table-bordered table-striped table-booking-history">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>De/A</th>
+                        <th>Montant</th>
+                        <th>Etat</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="booking-history-type"><i class="fa fa-arrow-right"></i><small class="text-darken">Entrante</small>
+                        </td>
+                        <td class="booking-history-title">17 février 2016</td>
+                        <td>Prénom Nom</td>
+                        <td>50 <i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></td>
+                        <td>Succé</td>
+                        <td class="text-center"><a href="#" class="btn btn-primary-invert" rel="tooltip" data-placement="top" title="Voir détails">Détails</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="booking-history-type"><i class="fa fa-arrow-left"></i><small class="text-darken">Sortante</small>
+                        </td>
+                        <td class="booking-history-title">17 février 2016</td>
+                        <td>Prénom Nom</td>
+                        <td>50 <i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></td>
+                        <td>En attente</td>
+                        <td class="text-center"><a href="#" class="btn btn-primary-invert" rel="tooltip" data-placement="top" title="Voir détails">Détails</a><a href="#" class="btn btn-success" rel="tooltip" data-placement="top" title="Valider transaction">Valider</a><a href="#" class="btn btn-danger" rel="tooltip" data-placement="top" title="Annuler transaction">Annuler</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="booking-history-type"><i class="fa fa-arrow-right"></i><small class="text-darken">Entrante</small>
+                        </td>
+                        <td class="booking-history-title">17 février 2016</td>
+                        <td>Prénom Nom</td>
+                        <td>50 <i class="fa fa-dollar"></i>/<i class="fa fa-euro"></i></td>
+                        <td>échec</td>
+                        <td class="text-center"><a href="#" class="btn btn-primary-invert" rel="tooltip" data-placement="top" title="Voir détails">Détails</a><a href="#" class="btn btn-danger" rel="tooltip" data-placement="top" title="Signaler l'erreur à l'administrateur">Signaler</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/custom.js"></script>
+

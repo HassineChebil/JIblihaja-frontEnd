@@ -1,0 +1,91 @@
+
+
+    <div class="container">
+        <h1 class="page-title">Vos Messages</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="user-profile-sidebar">
+                    <div class="user-profile-avatar text-center">
+                        <img ng-if="loggedUser.image !== undefined" src="http://localhost:3000/{{loggedUser.image}}" alt="Image de profile" title="Image de profile" />
+                        <img ng-if="loggedUser.image === undefined" src="img/300x300.png" alt="Image de profile" title="Image de profile">
+                        <h5>Prénom Nom</h5>
+                        <p>Membre depuis 2015</p>
+                        <h6>Niveau de confiance : <span>78/100</span></h6>
+                    </div>
+                    <ul class="list user-profile-nav">
+                        <li><a ui-sref="profile"><i class="fa fa-user"></i>Accueil</a>
+                        </li>
+                        <li><a ui-sref="profile-settings"><i class="fa fa-dashboard"></i>Compte</a>
+                        </li>
+                        <li><a ui-sref="profile-annonces"><i class="fa fa-bullhorn"></i>Annonces</a>
+                        </li>
+                        <li  class="active"><a ui-sref="profile-messages"><i class="fa fa-envelope"></i>Messages</a>
+                        </li>
+                        <li><a ui-sref="profile-bank"><i class="fa fa-credit-card"></i>Banque</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-9">
+                <ul class="booking-list booking-list-wishlist">
+                    <li><span class="booking-item-wishlist-title"><i class="fa fa-envelope-o"></i><span >Envoyer le 17 Février 2016</span></span>
+                        <a class="fa fa-times booking-item-wishlist-remove" href="#" rel="tooltip" data-placement="top" title="Supprimer message"></a>
+                        <a class="booking-item" >
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="booking-item-img-wrap">
+                                        <img src="img/800x600.png" alt="Nom Prénom" title="Nom Prénom" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="booking-item-rating">
+                                       <span class="booking-item-rating-number"><b >Nom</b> Prénom</span>
+                                    </div>
+                                    <h5 class="booking-item-title">Emplacement de la livraison</h5>
+                                    <p class="booking-item-address">est ce que tu veux qu'on se rencontre à ...</p><small class="booking-item-last-booked">Latest booking: Just now</small>
+                                </div>
+                                <div class="col-md-3"><span class="booking-item-price-from">à</span><span class="booking-item-price">23</span><span>h:30min</span><span rel="tooltip" data-placement="top" title="Envoyer un message de retour" class="btn btn-primary">Répondre</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><span class="booking-item-wishlist-title"><i class="fa fa-envelope-o"></i><span >Envoyer le 17 Février 2016</span></span>
+                        <a class="fa fa-times booking-item-wishlist-remove" href="#" rel="tooltip" data-placement="top" title="Supprimer message"></a>
+                        <a class="booking-item" >
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="booking-item-img-wrap">
+                                        <img src="img/800x600.png" alt="Nom Prénom" title="Nom Prénom" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="booking-item-rating">
+                                        <span class="booking-item-rating-number"><b >Nom</b> Prénom</span>
+                                    </div>
+                                    <h5 class="booking-item-title">Emplacement de la livraison</h5>
+                                    <p class="booking-item-address">est ce que tu veux qu'on se rencontre à ...</p><small class="booking-item-last-booked">Latest booking: Just now</small>
+                                </div>
+                                <div class="col-md-3"><span class="booking-item-price-from">à</span><span class="booking-item-price">23</span><span>h:30min</span><span rel="tooltip" data-placement="top" title="Envoyer un message de retour" class="btn btn-primary">Répondre</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn btn-info" rel="tooltip" data-placement="top" title="Afficher plus de messages"><i class="fa fa-plus-circle"></i>  Messages</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/custom.js"></script>
+
+
+

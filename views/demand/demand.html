@@ -1,0 +1,52 @@
+
+<div class="container">
+    <h1 class="page-title">Demande</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-5">
+                    <form ng-submit="update(demand)">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input class="form-control" type="text" ng-model="demand.content"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <input class="form-control" type="text" ng-model="demand.type"/>
+                        </div>
+                        <div class="form-group form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-hightlight"></i>
+                            <label>Date</label>
+                            <input class="form-control date" ng-model="demand.date" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Image</label>
+                            <input class="form-control" ng-model="demand.image" type="text"/>
+                        </div>
+                        <input title="Sauvegarder les changements effectués" type="submit" class="btn btn-primary" value="Sauvegarder">
+                        <input title="Ajouter ou modifier un rendez-vous" type="button" ng-click="rendezvous()" class="btn btn-primary" value="Rendez-vous">
+                    </form>
+                    <br/>
+                    <form ng-submit="saveAppointment(demand)" ng-show="show">
+                        <div class="form-group">
+                            <label>Adresse</label>
+                            <input class="form-control" type="text" ng-model="demand.appointment.address"/>
+                        </div>
+                        <div class="form-group form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-hightlight"></i>
+                            <label>Date</label>
+                            <input class="form-control date" ng-model="demand.appointment.date" type="text"/>
+                        </div>
+                        <input title="Sauvegarder les changements effectués" type="submit" class="btn btn-primary" value="Sauvegarder">
+                        <input title="Effacer le rendez-vous" type="button" class="btn btn-primary" value="Effacer" ng-click="deleteAppointment()">
+                        <br/><br/>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/custom.js"></script>

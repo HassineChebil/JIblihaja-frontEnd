@@ -1,0 +1,102 @@
+
+
+    <div class="container">
+        <h1 class="page-title">Annonces</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="user-profile-sidebar">
+                    <div class="user-profile-avatar text-center">
+                        <img ng-if="loggedUser.image !== undefined" src="http://localhost:3000/{{loggedUser.image}}" alt="Image de profile" title="Image de profile" />
+                        <img ng-if="loggedUser.image === undefined" src="img/300x300.png" alt="Image de profile" title="Image de profile">
+                        <h5>Prénom Nom</h5>
+                        <p>Membre depuis 2015</p>
+                        <h6>Niveau de confiance : <span>78/100</span></h6>
+                    </div>
+                    <ul class="list user-profile-nav">
+                        <li><a ui-sref="profile"><i class="fa fa-user"></i>Accueil</a>
+                        </li>
+                        <li><a ui-sref="profile-settings"><i class="fa fa-dashboard"></i>Compte</a>
+                        </li>
+                        <li  class="active"><a ui-sref="profile-annonces"><i class="fa fa-bullhorn"></i>Annonces</a>
+                        </li>
+                        <li><a ui-sref="profile-messages"><i class="fa fa-envelope"></i>Messages</a>
+                        </li>
+                        <li><a ui-sref="profile-bank"><i class="fa fa-credit-card"></i>Banque</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-9">
+                <a href="#" class="btn btn-primary mb20"><i class="fa fa-plus-circle"></i> Ajouter annonce</a>
+                <span class="checkbox">
+                    <label>
+                        <input class="i-check" type="checkbox" />Voyages</label>
+                </span>
+                <span class="checkbox">
+                    <label>
+                        <input class="i-check" type="checkbox" />Expéditions/Achats</label>
+                </span>
+
+                <table class="table table-bordered table-striped table-booking-history">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Départ</th>
+                        <th>Livraison</th>
+                        <th>Produit</th>
+                        <th><i class="fa fa-money"></i> offrir/accepter</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="booking-history-type"><i class="fa fa-plane"></i><small class="text-darken">Voyage</small>
+                        </td>
+                        <td class="booking-history-title">17 février 2016</td>
+                        <td>Tunis</td>
+                        <td>France</td>
+                        <td>iPhone6</td>
+                        <td>€35</td>
+                        <td class="text-center"><a href="#" class="btn btn-default" rel="tooltip" data-placement="top" title="Modifier annonce">Mod</a> <a href="#" class="btn btn-warning" rel="tooltip" data-placement="top" title="Trouver votre cible automatiquement">Coup</a> <a href="#" class="btn btn-danger" rel="tooltip" data-placement="top" title="Supprimer annonce">Supp</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="booking-history-type"><i class="fa fa-search-plus"></i><small class="text-darken">Expéd/Achat</small>
+                        </td>
+                        <td class="booking-history-title">17 février 2016</td>
+                        <td>Tunis</td>
+                        <td>France</td>
+                        <td>Matériel élèctronique</td>
+                        <td>€35</td>
+                        <td class="text-center"><a href="#" class="btn btn-default" rel="tooltip" data-placement="top" title="Modifier annonce">Mod</a> <a href="#" class="btn btn-warning" rel="tooltip" data-placement="top" title="Trouver votre cible automatiquement">Coup</a> <a href="#" class="btn btn-danger" rel="tooltip" data-placement="top" title="Supprimer annonce">Supp</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/custom.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

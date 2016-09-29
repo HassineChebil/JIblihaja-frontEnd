@@ -1,0 +1,136 @@
+<div class="container">
+
+    <div class="gap"></div>
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="booking-filters booking-filters-white">
+                <h3>Evaluation:</h3>
+                <ul class="list booking-filters-list">
+
+                    <li>
+                        <h5 class="booking-filters-title">Evaluez {{user.fName}} {{user.lName}}</h5>
+
+                        <div class="radio">
+                            <label>
+                                <input id="eva100" class="radio-lg" name="_rate" ng-model="rate" ng-value="'100'"
+                                       type="radio"/>5 star (100)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'80'" type="radio"/>4
+                                star (80)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'60'" type="radio"/>3
+                                star (60)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'40'" type="radio"/>2
+                                star (40)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'20'" type="radio"/>1
+                                star (20)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'-20'" type="radio"/>-1
+                                star (-20)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'-40'" type="radio"/>-2
+                                star (-40)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'-60'" type="radio"/>-3
+                                star (-60)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'-80'" type="radio"/>-4
+                                star (-80)</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input class="radio-lg" name="_rate" ng-model="rate" ng-value="'-100'" type="radio"/>-5
+                                star (-100)</label>
+                        </div>
+                    </li>
+                </ul>
+                <button ng-disabled="alreadyVoted === true || thatsYou === true || loggedUser === undefined" class="btn btn-primary col-sm-offset-4"
+                        type="submit" ng-click="evaluation(rate)">Evaluez
+                </button>
+            </aside>
+        </div>
+        <div class="col-md-9">
+            <div class="nav-drop booking-sort">
+
+            </div>
+            <h4>Vue global</h4>
+            <ul class="list list-inline user-profile-statictics mb30">
+                <li><i class="fa fa-bullhorn user-profile-statictics-icon"></i>
+                    <h5>20</h5>
+
+                    <p>Annonces</p>
+                </li>
+                <li><i class="fa fa-thumbs-up user-profile-statictics-icon"></i>
+                    <h5>5</h5>
+
+                    <p>Note Evaluation</p>
+                </li>
+                <li><i class="fa fa-comment user-profile-statictics-icon"></i>
+                    <h5>3</h5>
+
+                    <p>Avis</p>
+                </li>
+            </ul>
+            <div class="col-md-5">
+
+                <img ng-show="user.image !== undefined" style="width: 300px;height: 300px"
+                     src="http://localhost:3000/{{user.image}}">
+
+                <div class="gap gap-small"></div>
+
+
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <h4>Informations générales</h4>
+
+                <div class="form-group form-group-icon-left">
+                    <b>Nom :</b>
+                    <span ng-if="user.lName !== undefined" class="text-gray">{{user.lName}}</span>
+                    <span ng-if="user.lName === undefined" class="text-gray">pas encore saisie</span>
+                </div>
+                <div class="form-group form-group-icon-left">
+                    <b>Prénom :</b>
+                    <span ng-if="user.fName !== undefined" class="text-gray">{{user.fName}}</span>
+                    <span ng-if="user.fName === undefined" class="text-gray">pas encore saisie</span>
+                </div>
+                <div class="form-group form-group-icon-left">
+                    <b>E-mail :</b>
+                    <span ng-if="user.email !== undefined" class="text-gray">{{user.email}}</span>
+                    <span ng-if="user.email === undefined" class="text-gray">pas encore saisie</span>
+                </div>
+                <div class="gap gap-small"></div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="gap"></div>
+</div>
+
+<script src="js/icheck.js"></script>
+<script src="js/custom.js"></script>
+
+<script rel="script">
+    $('#eva100').on('ifChecked', function (event) {
+        $(this).iCheck('check');
+    });
+</script>
